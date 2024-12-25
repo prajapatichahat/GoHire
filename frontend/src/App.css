@@ -1,38 +1,441 @@
-.App {
+/* Navbar */
+.navbar{
+  border-bottom: 1px solid black;
+}
+.nav-link{
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; 
+}
+.nav-item .dropdown-menu li{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem;
+  clear: both;
+  font-weight: 500;
+  font-size: 15px;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+ .dropdown-menu .dropdown-item img {
+  width: 40px;
+  height: 40px;
+  background: #ededed;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all .3s ease-in;
+}
+.dropdown-item.active, .dropdown-item:active {
+  color: #000000;
+  text-decoration: none;
+  background-color: #ffce28 !important;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+      position: absolute;
+      padding-top: 28px;
+      border: 0px solid black;
+      border-bottom: 1px solid black;
+      background: #f8f9fa;
+      border-radius: 0px;
+      padding-bottom: 0px;
+    }
+}
+
+
+/* home */
+.hero_area {
+  min-height: 100vh;
+}
+
+.hero_area:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 65%;
+  background-image: url('images/hero-bg2.svg');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+a,a:focus,a:hover {
+  text-decoration: none
+}
+
+a:focus,a:hover {
+  color: initial
+}
+
+.btn,.btn:focus {
+  outline: none!important;
+  box-shadow: none
+}
+
+.slider_section .box .detail-box {
+  padding: 10%  10% 0% 10%;
+
+  
+}
+
+.slider_section .box .detail-box h4 {
+  font-size: 20px;
+  font-weight: 400
+}
+
+.slider_section .box .detail-box h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2rem
+}
+
+.slider_section .box .img-box {
+  margin: 0 7%
+}
+
+.slider_section .box .img-box img {
+  width: 100%
+}
+
+.slider_section .box .btn-box {
+  margin-top: 15px
+}
+
+.slider_section .box .btn-box a {
   text-align: center;
+  display: inline-block;
+  padding: 8px 30px;
+  border: 1px solid #2c2e35;
+  background-color: transparent;
+  color: #2c2e35
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slider_section .box .btn-box a:hover {
+  background-color: #2c2e35;
+  color: #fff
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.slider_section .slider_form {
+  width: 400px;
+  padding: 25px;
+  background-color: #2c2e35;
+  border-radius: 10px;
+  margin: auto
+}
+
+.slider_section .slider_form h4 {
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px
+}
+
+.slider_section .slider_form form {
+  margin: 15px 0
+}
+
+.slider_section .slider_form form input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  padding-left: 15px
+}
+
+.slider_section .slider_form form .btm_input {
+  display: flex
+}
+
+.slider_section .slider_form form .btm_input input {
+  width: calc(95% - 116px);
+  margin: 0 10px 0 0
+}
+
+.slider_section .slider_form form .btm_input button {
+  flex: 1;
+  min-width: 116px;
+  border: none;
+  outline: none;
+  background-color: #f7c621;
+  color: #fff
+}
+
+.about_section .row {
+  align-items: center
+}
+
+.about_section .detail-box {
+  position: relative;
+  padding-right: 75px
+}
+
+.about_section .detail-box a {
+  display: inline-block;
+  padding: 8px 25px;
+  border: 1px solid #2c2e35;
+  background-color: transparent;
+  color: #2c2e35;
+  margin-top: 25px
+}
+
+.about_section .detail-box a:hover {
+  background-color: #2c2e35;
+  color: #fff
+}
+
+.about_section .detail-box:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 65%;
+  top: 10%;
+  right: 25px;
+  z-index: 1;
+  background-color: #dbc64c;
+  background-repeat: no-repeat
+}
+
+.about_section .img-box {
+  padding: 75px 45px
+}
+
+.about_section .img-box img {
+  width: 100%;
+  position: relative;
+  z-index: 2
+}
+
+.about_section .img-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #2c2e35;
+  z-index: 1;
+  border-radius: 10px
+}
+
+.service_section .service_container {
+  display: flex;
+  text-align: center;
+  justify-content: space-between
+}
+
+.service_section .service_container .box .img-box {
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end
+}
+
+.service_section .service_container .box .img-box img {
+  max-width: 100%;
+  max-height: 100%
+}
+
+.service_section .service_container .box .detail-box {
+  margin-top: 15px
+}
+
+.service_section .service_container .box .detail-box h5 {
+  font-weight: 700
+}
+
+.service_section .service_container .box .detail-box a {
+  display: inline-block;
+  padding: 7px 20px;
+  border: 1px solid #2c2e35;
+  background-color: transparent;
+  color: #2c2e35
+}
+
+.service_section .service_container .box .detail-box a:hover {
+  background-color: #2c2e35;
+  color: #fff
+}
+
+.walk-driver{
+  position: absolute;
+  bottom: 14%;
+  left: -9%;
+  height: 40%;
+  animation: moveLeft 5s infinite forwards;
+}
+@media (max-width: 768px) {
+  .hero_area:before {
+    width: 100%; 
+    background-size: 100%; 
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes moveLeft {
   from {
-    transform: rotate(0deg);
+    left: -9%;
   }
   to {
-    transform: rotate(360deg);
+    left: 17%;
   }
 }
+/* card */
+
+.booking-Card .bookCard a {
+  text-decoration: none;
+  color: var(--c-gray-900)
+}
+
+.bookCard {
+  width: 200px;
+  transition: .15s ease-out;
+  margin-top: 50px
+}
+
+.card-1 .bookCard,.card-3 .bookCard {
+  transform: rotate(-3deg);
+}
+
+.card-2 .bookCard,.card-4 .bookCard {
+  transform: rotate(5deg)
+}
+
+.bookCard a {
+  text-decoration: none;
+  color: #1d1d1d
+}
+
+.card-1 .bookCard:focus-within,.card-1 .bookCard:hover {
+  transform: translateY(4px) rotate(-3deg)
+}
+
+.card-2 .bookCard:focus-within,.card-2 .bookCard:hover {
+  transform: translateY(4px) rotate(5deg)
+}
+
+.card-3 .bookCard:focus-within,.card-3 .bookCard:hover {
+  transform: translateY(4px) rotate(-3deg)
+}
+
+.card-4 .bookCard:focus-within,.card-4 .bookCard:hover {
+  transform: translateY(4px) rotate(5deg)
+}
+
+.bookCard:focus-within .card-pin:after,.bookCard:hover .card-pin:after {
+  height: 54px
+}
+
+.bookCard:focus-within .card-pin:before,.bookCard:hover .card-pin:before {
+  transform: translatey(-4px)
+}
+
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d3d3d3;
+  border-bottom: none;
+  border-radius: 20px;
+  padding: .5rem;
+  background-color: #fff;
+  position: relative
+}
+
+.card-inner:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 95%;
+  height: 100%;
+  bottom: -9px;
+  left: calc(50% - 47.5%);
+  border-radius: 20px;
+  background-color: #ffce28
+}
+
+.card-pin1,.card-pin3 {
+  left: calc(85% - 6px)
+}
+
+.card-pin2,.card-pin4 {
+  left: calc(15% - 6px)
+}
+
+.card-pin {
+  width: 12px;
+  height: 12px;
+  background-color: var(--c-gray-900);
+  position: absolute;
+  top: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #fff,0 0 0 3px var(--c-gray-900);
+  transform: rotate(3deg);
+  z-index: 1
+}
+
+.card-pin:after,.card-pin:before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  transition: .15s ease-out
+}
+
+.card-pin:before {
+  width: 12px;
+  height: 12px;
+  background-color: var(--c-gray-900);
+  border-radius: 50%;
+  left: calc(50% - 6px);
+  top: -44px
+}
+
+.card-pin:after {
+  width: 6px;
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 99em;
+  height: 50px;
+  left: calc(50% - 3px);
+  bottom: 3px
+}
+
+.card-pin.simple {
+  box-shadow: none
+}
+
+.card-image {
+  border-radius: 15px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  position: relative
+}
+
+.card-image img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+.card-title {
+  margin: 15px 7px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: .5rem
+}
+

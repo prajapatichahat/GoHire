@@ -2,11 +2,17 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './components/Login';
 import Register from './components/Register';
 import { AuthProvider } from './context/AuthContext';
+import Navbar from './components/layout/Navbar';
+
+import './App.css';
 import Home from './Home';
+// import './css/style.css';
 
 function App() {
     return (
+        <>
         <AuthProvider>
+            <Navbar/>
             <Router>
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -18,6 +24,7 @@ function App() {
                 </Routes>
             </Router>
         </AuthProvider>
+        </>
     );
 }
 

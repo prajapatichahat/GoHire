@@ -1,0 +1,216 @@
+/* home */
+.hero_area {
+    min-height: 100vh;
+    position: relative;
+    margin-top: -115px
+  }
+  
+  .hero_area:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 65%;
+    background-image: url(images/hero-bg2.svg);
+    background-size: 80%;
+    background-repeat: no-repeat
+  }
+  
+  a,a:focus,a:hover {
+    text-decoration: none
+  }
+  
+  a:focus,a:hover {
+    color: initial
+  }
+  
+  .btn,.btn:focus {
+    outline: none!important;
+    box-shadow: none
+  }
+  
+  .slider_section .box .detail-box {
+    padding-right: 10%;
+    position: absolute;
+    top: -80px
+  }
+  
+  .slider_section .box .detail-box h4 {
+    font-size: 20px;
+    font-weight: 400
+  }
+  
+  .slider_section .box .detail-box h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2rem
+  }
+  
+  .slider_section .box .img-box {
+    margin: 0 7%
+  }
+  
+  .slider_section .box .img-box img {
+    width: 100%
+  }
+  
+  .slider_section .box .btn-box {
+    margin-top: 15px
+  }
+  
+  .slider_section .box .btn-box a {
+    text-align: center;
+    display: inline-block;
+    padding: 8px 30px;
+    border: 1px solid #2c2e35;
+    background-color: transparent;
+    color: #2c2e35
+  }
+  
+  .slider_section .box .btn-box a:hover {
+    background-color: #2c2e35;
+    color: #fff
+  }
+  
+  .slider_section .slider_form {
+    width: 400px;
+    padding: 25px;
+    background-color: #2c2e35;
+    border-radius: 10px;
+    margin: auto
+  }
+  
+  .slider_section .slider_form h4 {
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px
+  }
+  
+  .slider_section .slider_form form {
+    margin: 15px 0
+  }
+  
+  .slider_section .slider_form form input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    padding-left: 15px
+  }
+  
+  .slider_section .slider_form form .btm_input {
+    display: flex
+  }
+  
+  .slider_section .slider_form form .btm_input input {
+    width: calc(95% - 116px);
+    margin: 0 10px 0 0
+  }
+  
+  .slider_section .slider_form form .btm_input button {
+    flex: 1;
+    min-width: 116px;
+    border: none;
+    outline: none;
+    background-color: #f7c621;
+    color: #fff
+  }
+  
+  .about_section .row {
+    align-items: center
+  }
+  
+  .about_section .detail-box {
+    position: relative;
+    padding-right: 75px
+  }
+  
+  .about_section .detail-box a {
+    display: inline-block;
+    padding: 8px 25px;
+    border: 1px solid #2c2e35;
+    background-color: transparent;
+    color: #2c2e35;
+    margin-top: 25px
+  }
+  
+  .about_section .detail-box a:hover {
+    background-color: #2c2e35;
+    color: #fff
+  }
+  
+  .about_section .detail-box:before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 65%;
+    top: 10%;
+    right: 25px;
+    z-index: 1;
+    background-color: #dbc64c;
+    background-repeat: no-repeat
+  }
+  
+  .about_section .img-box {
+    padding: 75px 45px
+  }
+  
+  .about_section .img-box img {
+    width: 100%;
+    position: relative;
+    z-index: 2
+  }
+  
+  .about_section .img-box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-color: #2c2e35;
+    z-index: 1;
+    border-radius: 10px
+  }
+  
+  .service_section .service_container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between
+  }
+  
+  .service_section .service_container .box .img-box {
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end
+  }
+  
+  .service_section .service_container .box .img-box img {
+    max-width: 100%;
+    max-height: 100%
+  }
+  
+  .service_section .service_container .box .detail-box {
+    margin-top: 15px
+  }
+  
+  .service_section .service_container .box .detail-box h5 {
+    font-weight: 700
+  }
+  
+  .service_section .service_container .box .detail-box a {
+    display: inline-block;
+    padding: 7px 20px;
+    border: 1px solid #2c2e35;
+    background-color: transparent;
+    color: #2c2e35
+  }
+  
+  .service_section .service_container .box .detail-box a:hover {
+    background-color: #2c2e35;
+    color: #fff
+  }
