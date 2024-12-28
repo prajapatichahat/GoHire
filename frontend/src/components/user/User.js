@@ -1,6 +1,6 @@
 import React from 'react';
 
-const UserDashboard = () => {
+const User = () => {
     return (
         <div>
             <h1>User Dashboard</h1>
@@ -14,4 +14,4 @@ const handleLogout = () => {
     window.location.href = '/login';
 };
 
-export default UserDashboard;
+export default User;

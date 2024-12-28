@@ -1,5 +1,6 @@
 import React from 'react'
 import { ReactTyped as Typed } from 'react-typed';
+import About from './About';
 
 
 function Home() {
@@ -108,7 +109,7 @@ function Home() {
     </div>
   </section>
 </div>
-
+<About/>
     </>
   )
 }

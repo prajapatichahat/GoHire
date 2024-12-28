@@ -1,9 +1,9 @@
 import React from 'react';
 
-const AdminDashboard = () => {
+const Driver = () => {
     return (
         <div>
-            <h1>Admin Dashboard</h1>
+            <h1>Driver Dashboard</h1>
             <button onClick={() => handleLogout()}>Logout</button>
         </div>
     );
@@ -14,4 +14,4 @@ const handleLogout = () => {
     window.location.href = '/login';
 };
 
-export default AdminDashboard;
+export default Driver;

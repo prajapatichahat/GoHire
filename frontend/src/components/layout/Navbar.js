@@ -1,17 +1,18 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light sticky-top bg-light">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           <img
             src="images/logo.png" // Replace with your logo path
             alt="Driver On Hire"
             style={{ height: "70px" }}
           />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -26,9 +27,9 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
               <a
@@ -121,9 +122,9 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="d-flex align-items-center">
-            <button className="btn btn-dark me-2" type="button">
-            Login & Register 
-            </button>
+            <Link className="btn btn-dark me-2" type="button" to="/login">
+            Login & Register     
+            </Link>
             <button className="btn btn-outline-dark" type="button">
             Call Us - 9737845710
             </button>
